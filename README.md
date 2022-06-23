@@ -1,3 +1,18 @@
+# 06.23 오류해결
+
+### aplication.properties
+```
+spring.datasource.jdbc-url=jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=Thdtkddjs1!
+
+mybatis.mapper-locations=classpath:mapper/*.xml
+```
+## 수정내용 : 
+```
+spring.datasource.url -> spring.datasource.jdbc-url
+mybatis.mapper-locations=classpath:mapper/*.xml 추가
+```
 
 ## TABLE 및 INSERT script
 ```sql
