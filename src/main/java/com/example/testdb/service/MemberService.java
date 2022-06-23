@@ -3,6 +3,7 @@ package com.example.testdb.service;
 import com.example.testdb.model.dao.MemberDao;
 import com.example.testdb.model.dto.MemberInfo;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.List;
 @Service
 @MapperScan("com.example.testdb.model.dao")
 public class MemberService {
+
+    @Autowired
     private MemberDao memberdao;
 
     public MemberService(MemberDao memberdao){
